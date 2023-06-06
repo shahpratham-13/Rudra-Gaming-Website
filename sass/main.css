@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  /*62.5% = 10px*/
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
+:root {
+  --mainBg: #ff7b00;
+  --poppin: "Poppins", sans-serif;
+  --mont: "Montserrat", sans-serif;
+}
+
+/* header section css */
+#container #header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+  background: #fff;
+  z-index: 100;
+  position: relative;
+  box-shadow: 0 0 0.5rem rgb(226, 226, 226);
+}
+#container #header .dropdown {
+  position: absolute;
+  top: 105%;
+  left: 37%;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem #f0f0f0;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 1.5rem;
+  flex-direction: column;
+  border-radius: 1rem;
+  transition: all 0.3s linear;
+  opacity: 0;
+  transform: translateY(-40rem);
+}
+#container #header .dropdown a {
+  font-size: 1.3rem;
+  font-family: var(--poppin);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+#container #header .dropdown a span {
+  text-align: left;
+  width: 100%;
+  margin-left: 1rem;
+}
+#container #header .dropdown a img {
+  width: 5rem;
+  height: 100%;
+}
+#container #header .dropdown a:hover {
+  transform: scale(1.06);
+  color: var(--mainBg);
+}
+#container #header .toggleDropdown {
+  transform: translateY(0rem);
+}
+
+#container #header a > img {
+  width: 12rem;
+  height: 100%;
+}
+
+#container #header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+#container #header .nav a {
+  font-size: 1.3rem;
+  font-family: var(--poppin);
+  padding: 0.3rem 0.6rem;
+  transition: all 0.2s linear;
+}
+
+#container #header .nav > a:hover {
+  color: var(--mainBg);
+  transform: scale(1.08);
+}
+
+#container #header .nav a:nth-child(1) {
+  color: var(--mainBg);
+}
+
+#container #header .nav a:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+#container #header .nav a:nth-child(2) ion-icon {
+  transition: all 0.3s linear;
+}
+
+#container #header .nav .iconRotate {
+  transform: rotate(180deg);
+}
+
+#container #header .icon ion-icon {
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+#container #header .icon ion-icon:hover {
+  color: var(--mainBg);
+  transform: scale(1.08);
+}
+
+#container #header .searchDropdown {
+  position: absolute;
+  top: 105%;
+  right: 10%;
+  background: #fdfdfd;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  justify-content: center;
+  box-shadow: 0 0 0.5rem #f0f0f0;
+}
+#container #header .searchDropdown #searchField {
+  padding: 0.7rem 1.4rem;
+  margin-right: 1rem;
+  border: none;
+  color: var(--mainBg);
+  outline: none;
+  width: 40rem;
+  background: none;
+  border-bottom: 0.1rem solid #f8f8f8;
+  font-family: var(--poppin);
+}
+#container #header .searchDropdown #search {
+  font-size: 2.5rem;
+  transition: all 0.2s linear;
+}
+#container #header .searchDropdown #search:hover {
+  color: var(--mainBg);
+  transform: scale(1.08);
+}/*# sourceMappingURL=main.css.map */

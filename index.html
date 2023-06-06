@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#02ff56">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#02ff56" />
     <!-- custom stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/sass/main.css" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
 
     <title>TopupHungry.np | Chatara, Sunsari, Nepal</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
+      <!-- header section html -->
+      <header id="header">
+        <a href="#"><img src="/assets/logo.webp" alt="Rudra Gaming Logo" /></a>
+        <nav class="nav">
+          <a href="#">home</a>
+          <a href="#" class="dropdown-menu">
+            <span>gaming topup</span>
+            <ion-icon name="chevron-up-outline"></ion-icon>
+          </a>
+          <a href="#">tiktok</a>
+          <a href="#">Gift cards</a>
+          <a href="#">about</a>
+          <a href="#">contact us</a>
+        </nav>
+        
+        <div class="dropdown">
+          <a href="#"><img src="https://i.pinimg.com/564x/35/70/47/357047db27d05b5866501152aeea33a1.jpg" alt="Playerunknown's Battlegrounds Png, Pubg Png - Pubg In Png@pngkey.com"><span>pubg</span></a>
+          <a href="#"><img src="https://cdn-gop.garenanow.com/webmain/static/payment_center/common/garena-logo.png" alt="Garena Logo"><span>free fire</span></a>
+          <a href="#"><img src="https://i.pinimg.com/564x/53/bd/8c/53bd8c7363b2ba01137a3379f8979d65.jpg" alt="COD Logo"><span>call of duty</span></a>
+          <a href="#"><img src="https://i.pinimg.com/564x/98/92/8c/98928c82f78bdd50c5a28d8fa4633035.jpg" alt="clash of clans logo"><span>clash of clans</span></a>
+        </div>
 
-<!-- header section html -->
-        <header id="header">
-            <a href="#"><img src="/assets/logo.webp" alt="Rudra Gaming Logo"></a>
-            <nav class="nav">
-                <a href="#">home</a>
-                <a href="#">
-                        <span>gaming topup</span>
-                        <ion-icon name="chevron-up-outline"></ion-icon>
-                </a>
-                <a href="#">tiktok</a>
-                <a href="#">Gift cards</a>
-                <a href="#">about</a>
-                <a href="#">contact us</a>
-            </nav>
+        <div class="icon">
             <ion-icon name="search-outline" id="searchIcon"></ion-icon>
-        </header>
-    
-        <footer id="footer">
-            
-        </footer>
+            <ion-icon name="cart-outline" id="cartIcon"></ion-icon>
+            <ion-icon name="person-outline" id="userIcon"></ion-icon>
+        </div>
+        <div class="searchDropdown">
+          <input type="text" name="search" id="searchField" placeholder="Search...">
+          <ion-icon name="search-outline" id="search"></ion-icon>
+        </div>
+      </header>
 
-<!-- ion icon cdn link -->
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <footer id="footer"></footer>
+
+
+      <!-- script tags -->
+      <script src="main.js"></script>
+      <!-- ion icon cdn link -->
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
     </div>
-</body>
+  </body>
 </html>
